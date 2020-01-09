@@ -17,7 +17,6 @@ mongoose.connect(keys.mongodb.dbURI, () =>{
 //setup the routes
 app.use('/auth', authRoutes);
 
-
 app.get('/', (req, res) => {
     res.render('home');
 });
